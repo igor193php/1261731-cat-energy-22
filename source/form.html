@@ -8,7 +8,7 @@
 
 <body class="page__body">
   <header class="page-header">
-    <a class="logo" href="index.html">
+    <a class="logo" href="index.html" aria-label="Переход на главную страницу">
       <img src="img/icons/logo_mobile.svg" width="34" height="37" alt="Питание для котов">
       <img src="img/icons/logo_2.svg" width="101" height="18" alt="Cat energy">
     </a>
@@ -35,22 +35,25 @@
       Заполните анкету, и мы подберем
       программу питания для вашего кота
     </p>
-    <form class="page-main__form" method="get" action="#">
+    <form class="page-main__form" method="get" action="htmlacademy">
       <fieldset class="form-item">
         <ul class="cat-info-list">
           <li class="cat-info-item">
             <label>
-              Имя:* <input type="text" name="cat_name">
+              <span>Имя:*</span>
+              <input type="text" name="cat_name">
             </label>
           </li>
           <li class="cat-info-item">
             <label>
-              Вес (кг):* <input type="text" name="cat_weight">
+              <span>Вес (кг):*</span>
+              <input type="text" name="cat_weight">
             </label>
           </li>
           <li class="cat-info-item">
             <label>
-              Возраст (лет): <input type="text" name="cat_age">
+              <span>Возраст (лет):</span>
+              <input type="text" name="cat_age">
             </label>
           </li>
         </ul>
@@ -58,15 +61,15 @@
       <fieldset class="form-item">
         <ul class="program-list">
           <li class="program-item">
-            <input class="program-item__checkbox" type="checkbox" name="slimming" id="filter-slimming" checked>
+            <input class="program-item__checkbox" type="radio" name="program" value="slimming" id="filter-slimming" checked>
             <label for="filter-slimming">Похудение</label>
           </li>
           <li class="program-item">
-            <input class="program-item__checkbox" type="checkbox" name="get_weight" id="filter-weight">
+            <input class="program-item__checkbox" type="radio" name="program" value="get_weight" id="filter-weight">
             <label for="filter-weight">Набор массы</label>
           </li>
           <li class="program-item">
-            <input class="program-item__checkbox" type="checkbox" name="other_program" id="filter-other">
+            <input class="program-item__checkbox" type="radio" name="program" value="other_program" id="filter-other">
             <label for="filter-other">Не знаю (Нужен ваш совет)</label>
           </li>
         </ul>
@@ -76,44 +79,46 @@
         <ul class="contacts-list">
           <li class="contact-item">
             <label>
-              E-mail:* <input type="email" name="mail">
+              <span>E-mail:*</span>
+              <input type="email" name="mail">
             </label>
           </li>
           <li class="contact-item">
             <label>
-              Телефон:* <input type="text" name="phone">
+              <span>Телефон:*</span>
+              <input type="text" name="phone">
             </label>
           </li>
         </ul>
       </fieldset>
       <fieldset class="form-item">
         <legend class="form-item__title">Комментарий</legend>
-        <textarea name="comment"></textarea>
+        <textarea name="comment" aria-label="Добавь коментарий"></textarea>
       </fieldset>
       <fieldset class="form-item">
         <legend class="form-item__title">Дополнительно</legend>
         <ul class="additions-list">
           <li class="additions-item">
-            <input class="additions-item__checkbox" type="checkbox" name="sweetener" id="filter-sweetener" checked>
+            <input class="additions-item__checkbox" type="checkbox" name="additions1" value="sweetener" id="filter-sweetener" checked>
             <label for="filter-sweetener">Сахарозаменитель</label>
           </li>
           <li class="additions-item">
-            <input class="additions-item__checkbox" type="checkbox" name="water" id="filter-water">
+            <input class="additions-item__checkbox" type="checkbox" name="additions2" value="water" id="filter-water">
             <label for="filter-water">Питьевая вода</label>
           </li>
           <li class="additions-item">
-            <input class="additions-item__checkbox" type="checkbox" name="milk" id="filter-milk">
+            <input class="additions-item__checkbox" type="checkbox" name="additions3" value="milk" id="filter-milk">
             <label for="filter-milk">Молоко</label>
           </li>
           <li class="additions-item">
-            <input class="additions-item__checkbox" type="checkbox" name="vitamins" id="filter-vitamins">
+            <input class="additions-item__checkbox" type="checkbox" name="additions4" value="vitamins" id="filter-vitamins">
             <label for="filter-vitamins">Витамины</label>
           </li>
         </ul>
       </fieldset>
       <button class="button-form" type="submit">отправить заявку</button>
+      <p class="required-text">* — Обязательные поля</p>
     </form>
-    <p class="required-text">* — Обязательные поля</p>
     <section class="contacts">
       <h2 class="visually-hidden">Контактные данные</h2>
 
@@ -134,13 +139,13 @@
     </a>
     <ul class="social">
       <li class="social__item">
-        <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"></a>
+        <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy" aria-label="Мы в vkontakte"></a>
       </li>
       <li class="social__item">
-        <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"></a>
+        <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" aria-label="Мы в facebook"></a>
       </li>
       <li class="social__item">
-        <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy"></a>
+        <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy" aria-label="Мы в instagram"></a>
       </li>
     </ul>
     <div class="copyright">
