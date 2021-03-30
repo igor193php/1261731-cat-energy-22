@@ -29,10 +29,11 @@
   </header>
 
   <main class="page-main">
-    <h1 class="page-main__title">Каталог продукции</h1>
+    <section class="goods">
+      <h1 class="page-main__title">Каталог продукции</h1>
 
-    <ul class="goods-list">
-      <li class="goods-item">
+
+      <div class="goods-item">
         <img src="img/bin_small_orange.jpg" width="140" height="112" alt="Упаковка корма куриный вкус 500г">
         <p class="goods-item__title">Cat Energy PRO 500 г</p>
         <dl class="product-detail">
@@ -47,8 +48,8 @@
         </dl>
 
         <button class="catalog-button">Заказать</button>
-      </li>
-      <li class="goods-item">
+      </div>
+      <div class="goods-item">
         <img src="img/bin_big_orange.jpg" width="140" height="112" alt="Упаковка корма куриный вкус 1000г">
         <p class="goods-item__title">Cat Energy PRO 1000 г</p>
         <dl class="product-detail">
@@ -63,9 +64,9 @@
         </dl>
 
         <button class="catalog-button">Заказать</button>
-      </li>
+      </div>
 
-      <li class="goods-item">
+      <div class="goods-item">
         <img src="img/bin_small_green.jpg" width="140" height="112" alt="Упаковка корма рыбный вкус 500г">
         <p class="goods-item__title">Cat Energy PRO 500 г</p>
         <dl class="product-detail">
@@ -80,8 +81,8 @@
         </dl>
 
         <button class="catalog-button">Заказать</button>
-      </li>
-      <li class="goods-item">
+      </div>
+      <div class="goods-item">
         <img src="img/bin_big_green.jpg" width="140" height="112" alt="Упаковка корма рыбный вкус 1000г">
         <p class="goods-item__title">Cat Energy PRO 1000 г</p>
         <dl class="product-detail">
@@ -96,9 +97,9 @@
         </dl>
 
         <button class="catalog-button">Заказать</button>
-      </li>
+      </div>
 
-      <li class="goods-item">
+      <div class="goods-item">
         <img src="img/bin_small_orange.jpg" width="140" height="112" alt="Упаковка корма гречка 500г">
         <p class="goods-item__title">Cat Energy PRO 500 г</p>
         <dl class="product-detail">
@@ -113,8 +114,8 @@
         </dl>
 
         <button class="catalog-button">Заказать</button>
-      </li>
-      <li class="goods-item">
+      </div>
+      <div class="goods-item">
         <img src="img/bin_big_orange.jpg" width="140" height="112" alt="Упаковка корма гречка 1000г">
         <p class="goods-item__title">Cat Energy PRO 1000 г</p>
         <dl class="product-detail">
@@ -129,8 +130,8 @@
         </dl>
 
         <button class="catalog-button">Заказать</button>
-      </li>
-      <li class="goods-item">
+      </div>
+      <div class="goods-item">
         <img src="img/bin_small_purple.jpg" width="140" height="112" alt="Упаковка корма рис 500г">
         <p class="goods-item__title">Cat Energy PRO 500 г</p>
         <dl class="product-detail">
@@ -145,19 +146,20 @@
         </dl>
 
         <button class="catalog-button">Заказать</button>
-      </li>
-      <li class="goods-item">
-        <p class="goods-item__text">Показать еще 100500 товаров</p>
-        <p class="goods-item__subtext">На самом деле вкусов гораздо больше!</p>
+      </div>
+      <div class="goods-item">
+        <p>Показать еще 100500 товаров</p>
+        <p>На самом деле вкусов гораздо больше!</p>
 
-        <button class="catalog-button">показать все</button>
-      </li>
-    </ul>
+        <a class="link-catalog" href="#">Показать все</a>
+      </div>
+    </section>
 
-    <h2 class="additional-goods-title">Дополнительные товары</h2>
+    <section class="additional-goods">
+      <h2 class="additional-goods__title">Дополнительные товары</h2>
 
-    <ul class="additional-goods-list">
-      <li class="additional-goods-item">
+
+      <div class="additional-goods-item">
         <p class="additional-goods-item__title">Сахарозаменитель</p>
         <dl class="additional-goods-detail">
           <dt>1 упаковка (100 г)</dt>
@@ -165,8 +167,8 @@
         </dl>
 
         <button class="catalog-button">Заказать</button>
-      </li>
-      <li class="additional-goods-item">
+      </div>
+      <div class="additional-goods-item">
         <p class="additional-goods-item__title">питьевая вода</p>
         <dl class="additional-goods-detail">
           <dt>5 литров</dt>
@@ -174,8 +176,8 @@
         </dl>
 
         <button class="catalog-button">Заказать</button>
-      </li>
-      <li class="additional-goods-item">
+      </div>
+      <div class="additional-goods-item">
         <p class="additional-goods-item__title">молоко</p>
         <dl class="additional-goods-detail">
           <dt>1 литр</dt>
@@ -183,8 +185,8 @@
         </dl>
 
         <button class="catalog-button">Заказать</button>
-      </li>
-      <li class="additional-goods-item">
+      </div>
+      <div class="additional-goods-item">
         <p class="additional-goods-item__title">витамины</p>
         <dl class="additional-goods-detail">
           <dt>1 упаковка (30 г)</dt>
@@ -192,12 +194,12 @@
         </dl>
 
         <button class="catalog-button">Заказать</button>
-      </li>
-    </ul>
-    <section class="promo-block">
-      <h2 class="visually-hidden">Акция дня</h2>
-      <p class=promo-block__text>Закажите все и получите чехол для
-        кота в подарок!</p>
+      </div>
+      <div class="promo-block">
+        <h2 class="visually-hidden">Акция дня</h2>
+        <p class=promo-block__text>Закажите все и получите чехол для
+          кота в подарок!</p>
+      </div>
     </section>
     <section class="contacts">
       <h2 class="visually-hidden">Контактные данные</h2>
