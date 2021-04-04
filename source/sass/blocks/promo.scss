@@ -1,15 +1,12 @@
-
 .promo {
   color: $white-900;
-  font-family:  $font-family-Oswald;
+  font-family: $font-family-oswald;
   font-style: normal;
-
-  @include border-development(green);
 }
 
 .promo__info {
   background-color: $gray-700;
-  background-image: url(../img/index-background-desktop-2.jpg);
+  background-image: url("../img/index-background-desktop-2.jpg");
   background-repeat: no-repeat;
 
   padding: 27px 0 0 0;
