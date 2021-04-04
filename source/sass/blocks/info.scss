@@ -1,0 +1,16 @@
+.info {
+  @include border-development(#009999);
+}
+.info__title {
+  margin: 0 0 38px 0;
+  @include style-title-section-index-page;
+}
+
+.info__list {
+  @include reset-list;
+}
+
+.info__text {
+  margin: 0 0 24px 0;
+  @include style-text-index-page;
+}

@@ -1,0 +1,39 @@
+.programs {
+  padding: 24px 0 0 0;
+  @include border-development(red);
+}
+
+.programs__title {
+  @include style-title-text-index-page;
+
+  margin: 0 0 29px 0;
+}
+
+.programs__desc {
+  @include style-text-index-page;
+
+  margin: 0 0 42px 0;
+}
+
+.programs__list {
+  @include reset-list;
+}
+
+.programs__item {
+  background-color: $gray-900;
+
+  padding: 30px 0 18px 0;
+  margin: 0 0 20px 0;
+
+  @include border-development(#620CAC);
+}
+
+.programs__link {
+  color: $black-900;
+  font-family: $font-family-Oswald;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  text-transform: uppercase;
+}
