@@ -10,28 +10,3 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
-.clear-list {
-  list-style: none;
-}
-
-.style-link {
-  text-decoration: none;
-}
-
-.page {
-  box-sizing: border-box;
-}
-
-.button {
-  font-family: $font-family-oswald;
-  font-weight: 400;
-  font-size: 14px;
-  font-style: normal;
-  line-height: 18px;
-  color: $white-900;
-  background-color: $green-900;
-  text-transform: uppercase;
-
-  padding: 7px 44px 7px 44px;
-}

@@ -5,10 +5,11 @@
 @import "global/variables.scss";
 @import "global/global.scss";
 @import "mixins.scss";
+@import "global/reboot.scss";
+@import "global/container.scss";
 
 //blocks
 
-@import "blocks/page.scss";
 @import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/promo.scss";
