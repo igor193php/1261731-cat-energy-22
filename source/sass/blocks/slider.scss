@@ -1,0 +1,16 @@
+.slider__prev,
+.slider__next {
+  color: $black-900;
+  font-family: $font-family-oswald;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  border: none;
+  background-color: inherit;
+}
+
+.slider__image {
+  margin: 0 0 23px 0;
+}
