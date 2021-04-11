@@ -1,3 +1,10 @@
+.goods-item {
+  padding: 25px 0 25px 0;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-color: $gray-600;
+}
+
 .goods-item__title {
   color: $black-800;
   font-family: $font-family-oswald;
