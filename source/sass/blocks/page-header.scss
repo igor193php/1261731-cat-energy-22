@@ -1,7 +1,13 @@
-@media (min-width: $tablet-width) {
-  .page-header {
+.page-header {
+  @media (min-width: $tablet-width) {
     display: flex;
-    background-color: red;
+    justify-content: space-between;
+  }
+}
+
+.page-header__toggle {
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }
 
