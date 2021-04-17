@@ -5,15 +5,20 @@
 }
 
 .promo__info {
-  min-width: 302px;
+  min-width: 320px;
   background-image: url("../img/index-background-desktop-2.jpg");
-  background-color: $green-900-rgba-03;
   background-position: 0 0;
   background-repeat: no-repeat;
-  padding: 27px 0 0 0;
 
   @media (min-width: $tablet-width) {
     background-image: none;
+  }
+}
+
+.promo__info--background {
+  background-color: $green-900-rgba-03;
+
+  @media (min-width: $tablet-width) {
     background-color: inherit;
   }
 }
