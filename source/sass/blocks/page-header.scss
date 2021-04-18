@@ -3,6 +3,11 @@
     display: flex;
     justify-content: space-between;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    grid-column: 1 / -1;
+  }
 }
 
 .page-header__toggle {

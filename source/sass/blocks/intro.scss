@@ -1,0 +1,11 @@
+.intro {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-image: url("../img/green-background.svg"),
+      url("../img/index-background-desktop-1.jpg");
+    background-position: right, right;
+    background-repeat: no-repeat;
+    min-height: 594px;
+  }
+}

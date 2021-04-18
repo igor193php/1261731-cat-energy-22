@@ -1,25 +1,34 @@
 .promo {
+  min-height: 480px;
   color: $white-900;
   font-family: $font-family-oswald;
   font-style: normal;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 438px;
+      top: -32px;
+      width: 552px;
+      height: 499px;
+      background-image: url("../img/index-can-svg.svg");
+    }
+  }
 }
 
 .promo__info {
-  min-width: 320px;
-  background-image: url("../img/index-background-desktop-2.jpg");
-  background-position: 0 0;
+  background: url("../img/green-background.svg"),
+    url("../img/index-background-desktop-2.jpg");
+  background-size: auto;
   background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
     background-image: none;
-  }
-}
-
-.promo__info--background {
-  background-color: $green-900-rgba-03;
-
-  @media (min-width: $tablet-width) {
-    background-color: inherit;
   }
 }
 
