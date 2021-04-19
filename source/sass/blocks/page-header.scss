@@ -1,4 +1,6 @@
 .page-header {
+  padding: 0;
+
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
@@ -17,10 +19,10 @@
 }
 
 .page-header__logo {
-  padding: 24px 0 24px 0;
+  padding: 24px;
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid;
+  border-bottom: 1px solid $gray-620;
 
   @media (min-width: $tablet-width) {
     border-bottom: none;

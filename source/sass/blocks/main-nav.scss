@@ -15,6 +15,11 @@
   padding: 22px 0 22px 0;
   display: flex;
   justify-content: space-around;
+  border-bottom: 1px solid $gray-620;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
 }
 
 .main-nav__link {
