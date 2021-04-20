@@ -27,6 +27,8 @@
 }
 
 .info__item {
+  margin: 0 22px 0 80px;
+
   @media (min-width: $tablet-width) {
     position: relative;
     counter-increment: number;

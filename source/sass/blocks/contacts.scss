@@ -11,7 +11,10 @@
 }
 
 .contacts__info {
-  padding: 28px 0 28px 0;
+  padding: 28px 20px 28px 20px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .contacts__address {
