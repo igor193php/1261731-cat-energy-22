@@ -21,8 +21,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    background: url("../img/index-can-tablet-1.jpg") no-repeat;
-    background-size: contain;
+    min-height: auto;
   }
 
   @media (min-width: $desktop-width) {
@@ -52,6 +51,7 @@
 
   @media (min-width: $tablet-width) {
     background-image: none;
+    min-height: auto;
   }
 }
 
@@ -69,6 +69,9 @@
     font-size: 60px;
     line-height: 60px;
     color: $black-900;
+    width: 414px;
+    text-align: left;
+    margin-left: 83px;
   }
 }
 
@@ -86,5 +89,8 @@
     font-size: 20px;
     line-height: 20px;
     color: $black-900;
+    width: 414px;
+    text-align: left;
+    margin-left: 83px;
   }
 }
