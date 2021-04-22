@@ -1,6 +1,10 @@
 .example {
   padding: 27px 0 25px 0;
   background-color: $gray-800;
+
+  @media (min-width: $tablet-width) {
+    background-color: inherit;
+  }
 }
 
 .example__title {

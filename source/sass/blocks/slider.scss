@@ -1,3 +1,9 @@
+.slider {
+  @media (min-width: $tablet-width) {
+    background-color: $gray-800;
+  }
+}
+
 .slider__prev,
 .slider__next {
   color: $black-900;
