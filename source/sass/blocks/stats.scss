@@ -2,6 +2,15 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 384px;
+    padding: 0 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .stats__number {
@@ -12,6 +21,11 @@
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .stats__description {
@@ -33,6 +47,11 @@
   line-height: 20px;
   float: left;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .stats__item--legend {

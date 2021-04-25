@@ -6,4 +6,16 @@
   display: block;
   padding: 39px 95px 32px 95px;
   border-bottom: 1px solid $gray-630;
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 0;
+  }
+}
+
+.main-footer__items {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    min-height: 150px;
+  }
 }

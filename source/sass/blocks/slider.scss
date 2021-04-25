@@ -1,6 +1,16 @@
 .slider {
   @media (min-width: $tablet-width) {
     background-color: $gray-800;
+    min-height: 462px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / -1;
+    grid-row: 2 / -1;
   }
 }
 
@@ -19,4 +29,12 @@
 
 .slider__image {
   margin: 0 0 23px 0;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    height: 620px;
+    position: absolute;
+    top: -188px;
+    right: 0px;
+  }
 }

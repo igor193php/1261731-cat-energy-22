@@ -1,5 +1,9 @@
 .programs {
   padding-top: 24px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 71px;
+  }
 }
 
 .programs__title {
@@ -60,6 +64,7 @@
 
   @media (min-width: $desktop-width) {
     width: 570px;
+    padding: 39px 52px 23px 52px;
   }
 }
 
@@ -83,5 +88,9 @@
     min-height: 609px;
     background: url("../img/index-can-tablet-1.jpg") no-repeat;
     background-size: contain;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
   }
 }
