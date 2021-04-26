@@ -24,4 +24,9 @@
     padding: 14px 26px;
     margin-left: 83px;
   }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: -283px;
+  }
 }
