@@ -1,6 +1,16 @@
 .example {
-  padding: 27px 0 25px 0;
   background-color: $gray-800;
+
+  @media (min-width: $tablet-width) {
+    background-color: inherit;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr 1fr;
+    padding: 0;
+  }
 }
 
 .example__title {
@@ -11,6 +21,19 @@
   font-style: normal;
   font-weight: 400;
   line-height: 40px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    padding: 0 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 194px;
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;
+    padding: 0 120px;
+  }
 }
 
 .example__text {
@@ -21,4 +44,19 @@
   font-style: normal;
   font-weight: 400;
   line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 20px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-row: 2 / 3;
+    grid-column: 1 / -1;
+    z-index: 1;
+    width: 436px;
+    margin: 0 120px;
+    padding: 0;
+  }
 }

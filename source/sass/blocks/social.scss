@@ -1,6 +1,17 @@
 .social {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 37px;
   margin: 0;
   list-style: none;
-  padding: 20px 0 20px 0;
+  padding: 20px 73px 20px 73px;
+  border-bottom: 1px solid $gray-630;
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 0;
+  }
+}
+
+.social__link {
+  color: $gray-650;
 }

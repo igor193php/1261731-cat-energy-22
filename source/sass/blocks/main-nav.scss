@@ -3,10 +3,24 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: auto 1fr 1fr;
+    gap: 33px;
+  }
 }
 
 .main-nav__item {
   padding: 22px 0 22px 0;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid $gray-620;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    padding-bottom: 10px;
+  }
 }
 
 .main-nav__link {
@@ -16,6 +30,9 @@
   line-height: 20px;
   font-style: normal;
   color: $black-900;
-
   text-transform: uppercase;
+
+  @media (min-width: $desktop-width) {
+    color: $white-900;
+  }
 }

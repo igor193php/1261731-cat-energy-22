@@ -1,30 +1,96 @@
 .promo {
+  min-height: 480px;
   color: $white-900;
   font-family: $font-family-oswald;
   font-style: normal;
+  padding: 0;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 23px;
+    top: 446px;
+    width: 552px;
+    height: 499px;
+    background-image: url("../img/index-can-mobile-1.svg");
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    position: relative;
+    background: none;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 556px;
+      top: -177px;
+      width: 552px;
+      height: 499px;
+      background-image: url("../img/index-can-svg.svg");
+    }
+  }
 }
 
 .promo__info {
-  background-image: url("../img/index-background-desktop-2.jpg");
-  background-color: $green-900-rgba-03;
-  background-position: 0 0;
+  background: url("../img/green-background.svg"),
+    url("../img/index-background-desktop-2.jpg");
+  background-size: 100%;
+  background-repeat: repeat, no-repeat;
+  min-height: 302px;
 
-  background-repeat: no-repeat;
-
-  padding: 27px 0 0 0;
+  @media (min-width: $tablet-width) {
+    background-image: none;
+    min-height: auto;
+  }
 }
 
 .promo__intro {
+  font-family: $font-family-oswald;
+  color: $white-900;
   font-size: 36px;
   font-weight: 400;
+  font-style: normal;
   line-height: 36px;
-
   margin: 0 0 25px 0;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    color: $black-900;
+    width: 414px;
+    text-align: left;
+    margin-left: 83px;
+  }
 }
 
 .promo__slogan {
+  font-family: $font-family-oswald;
+  color: $white-900;
   font-size: 14px;
   font-weight: 400;
+  font-style: normal;
   line-height: 14px;
   text-transform: uppercase;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    color: $black-900;
+    width: 414px;
+    text-align: left;
+    margin-left: 83px;
+  }
 }
