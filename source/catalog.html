@@ -12,13 +12,14 @@
 </head>
 
 <body>
-  <header class="page-header  container">
-    <a class="logo" href="index.html" aria-label="Переход на главную страницу">
-      <img src="img/icons/logo_mobile.svg" width="34" height="37" alt="Питание для котов">
-      <img src="img/icons/logo_2.svg" width="101" height="18" alt="Cat energy">
-    </a>
+  <div class="intro intro--form container container--form">
+    <header class="page-header container">
+      <div class="page-header__logo">
+        <a><img src="img/icons/logo_mobile.svg" width="34" height="37" alt="Питание для котов"></a>
+        <a><img src="img/icons/logo_2.svg" width="101" height="18" alt="Cat energy"></a>
+        <button class="page-header__toggle" type="button" aria-label="Открыть/закрыть меню"></button>
+      </div>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button" aria-label="Открыть/закрыть меню"></button>
       <ul class="main-nav__list">
         <li class="main-nav__item">
           <a class="main-nav__link style-link" href="index.html">Главная</a>
@@ -39,7 +40,7 @@
 
       <div class="goods-list">
         <div class="goods-item">
-          <a href="#"><img src="img/bin_small_orange.jpg" width="140" height="112"
+          <a class="goods-item__img" href="#"><img src="img/bin_small_orange.jpg" width="140" height="112"
               alt="Упаковка корма куриный вкус 500г"></a>
           <a href="#">
             <h3 class="goods-item__title">Cat Energy PRO 500 г</h3>
@@ -55,10 +56,10 @@
             <dd>700 р.</dd>
           </dl>
 
-          <a href="#" class="button">Заказать</a>
+          <a href="#" class="button button--goods">Заказать</a>
         </div>
         <div class="goods-item">
-          <a href="#"><img src="img/bin_big_orange.jpg" width="140" height="112"
+          <a class="goods-item__img" href="#"><img src="img/bin_big_orange.jpg" width="140" height="112"
               alt="Упаковка корма куриный вкус 1000г"></a>
           <a href="#">
             <h3 class="goods-item__title">Cat Energy PRO 1000 г</h3>
@@ -74,11 +75,11 @@
             <dd>1000 р.</dd>
           </dl>
 
-          <a href="#" class="button">Заказать</a>
+          <a href="#" class="button button--goods">Заказать</a>
         </div>
 
         <div class="goods-item">
-          <a href="#"><img src="img/bin_small_green.jpg" width="140" height="112"
+          <a class="goods-item__img" href="#"><img src="img/bin_small_green.jpg" width="140" height="112"
               alt="Упаковка корма рыбный вкус 500г"></a>
           <a href="#">
             <h3 class="goods-item__title">Cat Energy PRO 500 г</h3>
@@ -94,10 +95,10 @@
             <dd>700 р.</dd>
           </dl>
 
-          <a href="#" class="button">Заказать</a>
+          <a href="#" class="button button--goods">Заказать</a>
         </div>
         <div class="goods-item">
-          <a href="#"><img src="img/bin_big_green.jpg" width="140" height="112"
+          <a class="goods-item__img" href="#"><img src="img/bin_big_green.jpg" width="140" height="112"
               alt="Упаковка корма рыбный вкус 1000г"></a>
           <a href="#">
             <h3 class="goods-item__title">Cat Energy PRO 1000 г</h3>
@@ -113,11 +114,11 @@
             <dd>1000 р.</dd>
           </dl>
 
-          <a href="#" class="button">Заказать</a>
+          <a href="#" class="button button--goods">Заказать</a>
         </div>
 
         <div class="goods-item">
-          <a href="#"><img src="img/bin_small_orange.jpg" width="140" height="112" alt="Упаковка корма гречка 500г"></a>
+          <a class="goods-item__img" href="#"><img src="img/bin_small_orange.jpg" width="140" height="112" alt="Упаковка корма гречка 500г"></a>
           <a href="#">
             <h3 class="goods-item__title">Cat Energy PRO 500 г</h3>
           </a>
@@ -132,10 +133,10 @@
             <dd>400 р.</dd>
           </dl>
 
-          <a href="#" class="button">Заказать</a>
+          <a href="#" class="button button--goods">Заказать</a>
         </div>
         <div class="goods-item">
-          <a href="#"><img src="img/bin_big_orange.jpg" width="140" height="112" alt="Упаковка корма гречка 1000г"></a>
+          <a class="goods-item__img" href="#"><img src="img/bin_big_orange.jpg" width="140" height="112" alt="Упаковка корма гречка 1000г"></a>
           <a href="#">
             <h3 class="goods-item__title">Cat Energy PRO 1000 г</h3>
           </a>
@@ -150,10 +151,10 @@
             <dd>700 р.</dd>
           </dl>
 
-          <a href="#" class="button">Заказать</a>
+          <a href="#" class="button button--goods">Заказать</a>
         </div>
         <div class="goods-item">
-          <a href="#"><img src="img/bin_small_purple.jpg" width="140" height="112" alt="Упаковка корма рис 500г"></a>
+          <a class="goods-item__img" href="#"><img src="img/bin_small_purple.jpg" width="140" height="112" alt="Упаковка корма рис 500г"></a>
           <a href="#">
             <h3 class="goods-item__title">Cat Energy PRO 500 г</h3>
           </a>
@@ -168,7 +169,7 @@
             <dd>500 р.</dd>
           </dl>
 
-          <a href="#" class="button">Заказать</a>
+          <a href="#" class="button button--goods">Заказать</a>
         </div>
         <div class="goods-item">
           <h3 class="goods-item__title">Показать еще 100500 товаров</h3>
@@ -190,7 +191,7 @@
             <dd>200 p.</dd>
           </dl>
 
-          <a href="#" class="button">Заказать</a>
+          <a href="#" class="button button--goods">Заказать</a>
         </div>
         <div class="additional-goods-item">
           <p class="additional-goods-item__title">питьевая вода</p>
@@ -199,7 +200,7 @@
             <dd>50 p.</dd>
           </dl>
 
-          <a href="#" class="button">Заказать</a>
+          <a href="#" class="button button--goods">Заказать</a>
         </div>
         <div class="additional-goods-item">
           <p class="additional-goods-item__title">молоко</p>
@@ -208,7 +209,7 @@
             <dd>100 p.</dd>
           </dl>
 
-          <a href="#" class="button">Заказать</a>
+          <a href="#" class="button button--goods">Заказать</a>
         </div>
         <div class="additional-goods-item">
           <p class="additional-goods-item__title">витамины</p>
@@ -217,7 +218,7 @@
             <dd>300 p.</dd>
           </dl>
 
-          <a href="#" class="button">Заказать</a>
+          <a href="#" class="button button--goods">Заказать</a>
         </div>
         <div class="promo-block">
           <h2 class="visually-hidden">Акция дня</h2>

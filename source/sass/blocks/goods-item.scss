@@ -3,6 +3,9 @@
   border-top: 1px solid;
   border-bottom: 1px solid;
   border-color: $gray-600;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1fr auto;
 }
 
 .goods-item__title {
@@ -13,4 +16,8 @@
   font-style: normal;
   line-height: 20px;
   text-transform: uppercase;
+}
+
+.goods-item__img {
+  grid-row: 1 / 3;
 }
