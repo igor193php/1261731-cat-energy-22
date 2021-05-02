@@ -2,3 +2,10 @@
   margin: 0 0 32px 0;
   padding: 21px 0 0 0;
 }
+
+.main-form__programs {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}

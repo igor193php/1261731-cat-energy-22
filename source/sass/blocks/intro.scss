@@ -1,6 +1,10 @@
 .intro {
   padding: 0;
 
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
+
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -10,5 +14,12 @@
     background-repeat: no-repeat;
     min-height: 594px;
     margin-bottom: 136px;
+    padding: 0 120px;
   }
+}
+
+.intro--form {
+  background: none;
+  min-height: 0;
+  margin-bottom: 77px;
 }
