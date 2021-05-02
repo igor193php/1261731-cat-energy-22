@@ -1,0 +1,16 @@
+.invitation-text {
+  color: $black-800;
+  font-family: $font-family-oswald;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 171px;
+    font-size: 20px;
+    line-height: 21px;
+  }
+}
