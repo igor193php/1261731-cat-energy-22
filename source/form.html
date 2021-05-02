@@ -12,8 +12,8 @@
   </head>
 
 <body>
-  <div class="intro container">
-    <header class="page-header  container">
+  <div class="intro intro--form container container--form">
+    <header class="page-header container">
       <div class="page-header__logo">
         <a><img src="img/icons/logo_mobile.svg" width="34" height="37" alt="Питание для котов"></a>
         <a><img src="img/icons/logo_2.svg" width="101" height="18" alt="Cat energy"></a>
@@ -22,27 +22,30 @@
     <nav class="main-nav">
       <ul class="main-nav__list">
         <li class="main-nav__item">
-          <a class="main-nav__link style-link" href="index.html">Главная</a>
+          <a class="main-nav__link style-link style-link--form" href="index.html">Главная</a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__link style-link" href="catalog.html">Каталог продукции</a>
+          <a class="main-nav__link style-link style-link--form" href="catalog.html">Каталог продукции</a>
         </li>
         <li class="main-nav__item main-nav__item--active">
-          <a class="main-nav__link style-link">Подбор программы</a>
+          <a class="main-nav__link style-link style-link--form">Подбор программы</a>
         </li>
       </ul>
     </nav>
   </header>
 </div>
 
-  <main class="page-main container">
+  <main class="page-main">
+    <div class="page-main__box container">
     <h1 class="page-main__title">Подбор программы</h1>
 
     <p class="page-main__text">
       Заполните анкету, и мы подберем
       программу питания для вашего кота
     </p>
-    <form class="main-form" method="get" action="htmlacademy">
+    </div>
+    <form class="main-form container" method="get" action="htmlacademy">
+      <div class="main-form__programs">
       <fieldset class="form-item">
         <ul class="cat-info-list">
           <li class="cat-info-item">
@@ -81,6 +84,7 @@
           </li>
         </ul>
       </fieldset>
+      </div>
       <fieldset class="form-item">
         <legend class="form-item__title">Контактные данные (владельца кота)</legend>
         <ul class="contacts-list">
@@ -123,10 +127,12 @@
           </li>
         </ul>
       </fieldset>
-      <button class="button style-link" type="submit">отправить заявку</button>
+      <div class="additions-end-block">
+      <button class="button button--additions" type="submit">отправить заявку</button>
       <p class="main-form__required-text">* — Обязательные поля</p>
+      </div>
     </form>
-    <section class="contacts contacts--form">
+    <section class="contacts">
       <h2 class="visually-hidden">Контактные данные</h2>
 
       <div class="contacts__wrapper">

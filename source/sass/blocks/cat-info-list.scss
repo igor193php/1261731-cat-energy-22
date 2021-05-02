@@ -8,6 +8,11 @@
   line-height: 18px;
   font-style: normal;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 29px;
+  }
 }
 
 .cat-info-item {

@@ -1,4 +1,3 @@
-
 .button {
   font-family: $font-family-oswald;
   font-weight: 400;
@@ -28,5 +27,16 @@
   @media (min-width: $desktop-width) {
     position: absolute;
     top: -283px;
+  }
+}
+
+.button--additions {
+  border: none;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    width: 282px;
+    padding: 0;
   }
 }
