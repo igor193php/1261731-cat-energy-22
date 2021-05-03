@@ -7,6 +7,29 @@
   &:nth-last-child(2) {
     margin-bottom: 39px;
   }
+
+  @media (min-width: $tablet-width) {
+    border: 1px solid $gray-640;
+    padding-left: 39px;
+    padding-right: 39px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 896px;
+    grid-column: 1 / 2;
+    border: none;
+    border-bottom: 1px solid $gray-640;
+
+    &:first-child {
+      border-top: 1px solid $gray-640;
+    }
+
+    &:nth-last-child(2) {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .additional-goods-item__title {
