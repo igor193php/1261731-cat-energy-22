@@ -1,3 +1,8 @@
 .additional-goods-list {
   margin: 0 0 35px 0;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }

@@ -2,6 +2,15 @@
   background-image: url("../img/gift-photo-mobile-1.jpg");
   background-color: $green-900-rgba-03;
   min-height: 289px;
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    min-height: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+  }
 }
 
 .promo-block__text {

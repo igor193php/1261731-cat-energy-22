@@ -1,3 +1,7 @@
+.page-main {
+  overflow-x: hidden;
+}
+
 .page-main__title {
   color: $black-900;
   font-family: $font-family-oswald;
@@ -11,6 +15,7 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
+    grid-column: 1 / -1;
   }
 }
 

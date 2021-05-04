@@ -1,0 +1,10 @@
+.additional-goods-box {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $desktop-width) {
+    width: inherit;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}

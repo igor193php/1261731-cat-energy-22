@@ -6,8 +6,14 @@
   font-weight: 400;
   line-height: 14px;
   margin: 0 0 15px 0;
+  display: flex;
+  justify-content: space-between;
 
   & dd {
     text-transform: uppercase;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 20px;
   }
 }

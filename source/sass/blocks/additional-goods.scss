@@ -4,6 +4,29 @@
   font-size: 24px;
   font-weight: 400;
   line-height: 18px;
-
   margin: 0 0 49px 0;
+  display: inline-flex;
+  position: relative;
+
+  &::before {
+    top: 11px;
+    content: "";
+    height: 2px;
+    transform: translateX(-100%);
+    position: absolute;
+    background-color: $green-900;
+    width: 100vw;
+    left: 0;
+  }
+
+  &::after {
+    top: 11px;
+    content: "";
+    height: 2px;
+    transform: translateX(100%);
+    position: absolute;
+    background-color: $green-900;
+    width: 100vw;
+    right: -22px;
+  }
 }
