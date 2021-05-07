@@ -48,6 +48,67 @@
 
 .info__item {
   margin: 0 22px 0 80px;
+  position: relative;
+
+  &:first-child {
+    &::before {
+      content: "";
+      position: absolute;
+      left: -78px;
+      top: 1px;
+      width: 60px;
+      height: 60px;
+      background-color: $green-900;
+      background-image: url("../img/icons/icon_leaf.svg");
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &:nth-child(2) {
+    &::before {
+      content: "";
+      position: absolute;
+      left: -78px;
+      top: 1px;
+      width: 60px;
+      height: 60px;
+      background-color: $green-900;
+      background-image: url("../img/icons/icon_tub.svg");
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &:nth-child(3) {
+    &::before {
+      content: "";
+      position: absolute;
+      left: -78px;
+      top: 1px;
+      width: 60px;
+      height: 60px;
+      background-color: $green-900;
+      background-image: url("../img/icons/icon_eat.svg");
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &:nth-child(4) {
+    &::before {
+      content: "";
+      position: absolute;
+      left: -78px;
+      top: 1px;
+      width: 60px;
+      height: 60px;
+      background-color: $green-900;
+      background-image: url("../img/icons/icon_alarm.svg");
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     position: relative;
