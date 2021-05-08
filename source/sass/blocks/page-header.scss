@@ -13,9 +13,23 @@
 }
 
 .page-header__toggle {
+  width: 24px;
+  position: relative;
+
   @media (min-width: $tablet-width) {
     display: none;
   }
+}
+
+.page-header--closed .page-header__toggle::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 17px;
+  width: 24px;
+  height: 2px;
+  background-color: $black-900;
+  box-shadow: 0 8px 0 0 $black-900, 0 16px 0 0 $black-900;
 }
 
 .page-header__logo {
