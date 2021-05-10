@@ -8,13 +8,15 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
     background-image: url("../img/green-background.svg"),
       url("../img/index-background-desktop-1.jpg");
     background-position: right, right;
     background-repeat: no-repeat;
-    min-height: 594px;
+    min-height: 694px;
     margin-bottom: 136px;
     padding: 0 120px;
+    padding-top: 67px;
   }
 }
 

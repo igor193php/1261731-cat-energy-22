@@ -22,11 +22,15 @@
     display: inline;
     padding: 14px 26px;
     margin-left: 83px;
+    position: absolute;
+    top: 32px;
   }
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    top: -283px;
+    top: 483px;
+    left: 171px;
+    margin: 0;
   }
 }
 

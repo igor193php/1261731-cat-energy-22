@@ -1,13 +1,13 @@
 .info {
   @media (min-width: $tablet-width) {
-    min-height: 781px;
+    min-height: 751px;
     border-bottom: 1px solid $gray-620;
-    margin-bottom: 43px;
   }
 
   @media (min-width: $desktop-width) {
     min-height: 230px;
-    margin-bottom: 11px;
+    margin-bottom: 70px;
+    border: none;
   }
 }
 
@@ -62,6 +62,16 @@
       background-image: url("../img/icons/icon_leaf.svg");
       background-position: 50% 50%;
       background-repeat: no-repeat;
+
+      @media (min-width: $tablet-width) {
+        left: -3px;
+        top: 48px;
+      }
+
+      @media (min-width: $desktop-width) {
+        width: 80px;
+        height: 80px;
+      }
     }
   }
 
@@ -77,6 +87,16 @@
       background-image: url("../img/icons/icon_tub.svg");
       background-position: 50% 50%;
       background-repeat: no-repeat;
+
+      @media (min-width: $tablet-width) {
+        left: -3px;
+        top: 48px;
+      }
+
+      @media (min-width: $desktop-width) {
+        width: 80px;
+        height: 80px;
+      }
     }
   }
 
@@ -92,6 +112,16 @@
       background-image: url("../img/icons/icon_eat.svg");
       background-position: 50% 50%;
       background-repeat: no-repeat;
+
+      @media (min-width: $tablet-width) {
+        left: -3px;
+        top: 48px;
+      }
+
+      @media (min-width: $desktop-width) {
+        width: 80px;
+        height: 80px;
+      }
     }
   }
 
@@ -107,6 +137,16 @@
       background-image: url("../img/icons/icon_alarm.svg");
       background-position: 50% 50%;
       background-repeat: no-repeat;
+
+      @media (min-width: $tablet-width) {
+        left: -3px;
+        top: 48px;
+      }
+
+      @media (min-width: $desktop-width) {
+        width: 80px;
+        height: 80px;
+      }
     }
   }
 
@@ -122,7 +162,7 @@
       content: counter(number);
       position: absolute;
       top: -3px;
-      left: 85px;
+      left: 120px;
       z-index: -1;
       font-family: $font-family-oswald;
       font-weight: 400;

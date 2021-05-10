@@ -35,9 +35,13 @@
   @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 24px;
+    font-weight: 400;
   }
 
   @media (min-width: $desktop-width) {
     color: $white-900;
+    font-size: 20px;
+    line-height: 29px;
+    font-weight: 400;
   }
 }
