@@ -71,6 +71,10 @@
     width: 144px;
     top: 58px;
   }
+
+  @media (min-width: $desktop-width) {
+    background-color: $gray-800;
+  }
 }
 
 .stats__legend {

@@ -61,6 +61,10 @@
 }
 
 .slider__range {
+  @media (min-width: $tablet-width) {
+    width: 428px;
+  }
+
   @media (min-width: $desktop-width) {
     width: 428px;
   }
