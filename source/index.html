@@ -15,9 +15,17 @@
   <div class="intro container">
     <header class="page-header  container">
       <div class="page-header__logo">
-        <a class="page-header__link-img"><img class="page-header__img" src="img/icons/logo_mobile.svg" width="34" height="37" alt="Питание для котов"></a>
-        <a class="page-header__link-logo-text"><img class="page-header__logo-text" src="img/icons/logo_2.svg" width="101" height="18" alt="Cat energy"></a>
-        <button class="page-header__toggle page-header--closed" type="button" aria-label="Открыть/закрыть меню"></button>
+        <a class="page-header__link-img">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="../img/icons/logo_desktop.svg">
+            <source media="(min-width: 768px)" srcset="../img/icons/logo_tablet.svg">
+            <img src="img/icons/logo_mobile.svg" width="34" height="37" alt="Питание для котов">
+          </picture>
+        </a>
+        <a class="page-header__link-logo-text"><img class="page-header__logo-text" src="img/icons/logo_2.svg"
+            width="101" height="18" alt="Cat energy"></a>
+        <button class="page-header__toggle page-header--closed" type="button"
+          aria-label="Открыть/закрыть меню"></button>
       </div>
       <nav class="main-nav">
         <ul class="main-nav__list">
@@ -133,7 +141,7 @@
         <img class="slider__image" src="img/fat_cat.jpg" width="311" height="232" alt="Фото сравнения кота">
         <div class="slider__chenger">
           <button class="slider__prev" type="button">Было</button>
-          <input class="slider__range" type="range">
+          <input class="slider__range" min="0" max="100" step="1" type="range" aria-label="Толтый/худой кот">
           <button class="slider__next" type="button">Стало</button>
         </div>
       </div>
@@ -148,7 +156,8 @@
             к сотрудничеству дилеров!
           </p>
           <address class="contacts-address">
-            <span class="contacts-address__street">ул. Большая Конюшенная, д. 19/8</span> <span class="contacts-address__city">Санкт-Петербург</span>
+            <span class="contacts-address__street">ул. Большая Конюшенная, д. 19/8</span> <span
+              class="contacts-address__city">Санкт-Петербург</span>
           </address>
         </div>
       </div>
