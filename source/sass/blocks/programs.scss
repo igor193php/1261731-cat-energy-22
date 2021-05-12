@@ -153,6 +153,10 @@
   text-transform: uppercase;
   position: relative;
 
+  &:active {
+    color: $black-900-rgba-03;
+  }
+
   &::after {
     content: "";
     position: absolute;

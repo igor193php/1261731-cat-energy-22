@@ -20,6 +20,26 @@
   @media (min-width: $tablet-width) {
     border: none;
     padding-bottom: 10px;
+
+    &--active {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: 3px;
+        background: $green-900;
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      background: $white-900;
+    }
   }
 }
 
@@ -32,6 +52,14 @@
   color: $black-900;
   text-transform: uppercase;
 
+  &:hover {
+    color: $black-900-rgba-06;
+  }
+
+  &:active {
+    color: $black-900-rgba-03;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 24px;
@@ -43,5 +71,13 @@
     font-size: 20px;
     line-height: 29px;
     font-weight: 400;
+
+    &:hover {
+      color: $white-900-rgba-06;
+    }
+
+    &:active {
+      color: $white-900-rgba-03;
+    }
   }
 }

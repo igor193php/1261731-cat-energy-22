@@ -16,6 +16,10 @@
 .button--progams {
   margin-bottom: 22px;
 
+  &:active {
+    color: $white-900-rgba-03;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;

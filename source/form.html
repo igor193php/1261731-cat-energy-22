@@ -15,9 +15,15 @@
   <div class="intro intro--form container container--form">
     <header class="page-header container">
       <div class="page-header__logo">
-        <a><img src="img/icons/logo_mobile.svg" width="34" height="37" alt="Питание для котов"></a>
-        <a><img src="img/icons/logo_2.svg" width="101" height="18" alt="Cat energy"></a>
-        <button class="page-header__toggle" type="button" aria-label="Открыть/закрыть меню"></button>
+        <a class="page-header__link-img">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="../img/icons/logo_desktop.svg">
+            <source media="(min-width: 768px)" srcset="../img/icons/logo_tablet.svg">
+            <img src="img/icons/logo_mobile.svg" width="191" height="37" alt="Питание для котов">
+          </picture>
+        </a>
+        <button class="page-header__toggle page-header--closed" type="button"
+          aria-label="Открыть/закрыть меню"></button>
       </div>
       <nav class="main-nav">
         <ul class="main-nav__list">
@@ -49,21 +55,21 @@
         <fieldset class="form-item">
           <ul class="cat-info-list">
             <li class="cat-info-item">
-              <label>
-                <span>Имя:*</span>
-                <input type="text" name="cat_name" placeholder="Барсик">
+              <label class="cat-info">
+                <span class="cat-info__title">Имя:*</span>
+                <input class="cat-info__input" type="text" name="cat_name" placeholder="Барсик">
               </label>
             </li>
             <li class="cat-info-item">
-              <label>
-                <span>Вес (кг):*</span>
-                <input type="text" name="cat_weight" placeholder="7">
+              <label class="cat-info">
+                <span class="cat-info__title">Вес (кг):*</span>
+                <input class="cat-info__input" type="text" name="cat_weight" placeholder="7">
               </label>
             </li>
             <li class="cat-info-item">
-              <label>
-                <span>Возраст (лет):</span>
-                <input type="text" name="cat_age" placeholder="7">
+              <label class="cat-info">
+                <span class="cat-info__title">Возраст (лет):</span>
+                <input class="cat-info__input" type="text" name="cat_age" placeholder="7">
               </label>
             </li>
           </ul>
@@ -90,15 +96,15 @@
         <legend class="form-item__title">Контактные данные (владельца кота)</legend>
         <ul class="contacts-list">
           <li class="contact-item">
-            <label>
-              <span>E-mail:*</span>
-              <input type="email" name="mail" placeholder="kuklachev@gmail.com">
+            <label class="contact-info">
+              <span class="contact-info__title">E-mail:*</span>
+              <input class="contact-info__input" type="email" name="mail" placeholder="kuklachev@gmail.com">
             </label>
           </li>
           <li class="contact-item">
-            <label>
-              <span>Телефон:*</span>
-              <input type="text" name="phone" placeholder="8 (960) 900-60-90">
+            <label class="contact-info">
+              <span class="contact-info__title">Телефон:*</span>
+              <input class="contact-info__input" type="text" name="phone" placeholder="8 (960) 900-60-90">
             </label>
           </li>
         </ul>
