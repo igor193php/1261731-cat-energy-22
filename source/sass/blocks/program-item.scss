@@ -1,3 +1,34 @@
 .program-item {
   margin-bottom: 19px;
 }
+
+.program-item__checkbox + label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -42px;
+    top: -5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid $gray-640;
+    border-radius: 50%;
+  }
+}
+
+.program-item__checkbox:checked + label {
+  &::after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: -34px;
+    width: 14px;
+    height: 14px;
+    background-color: $green-900;
+    border-radius: 50%;
+  }
+}

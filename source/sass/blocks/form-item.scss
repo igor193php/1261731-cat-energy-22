@@ -27,17 +27,6 @@
   margin: 0 0 35px 0;
   display: inline-flex;
 
-  &::before {
-    top: 11px;
-    content: "";
-    height: 2px;
-    transform: translateX(-100%);
-    position: absolute;
-    background-color: $green-900;
-    width: 100vw;
-    left: 0;
-  }
-
   &::after {
     top: 11px;
     content: "";
@@ -52,6 +41,17 @@
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
+
+    &::before {
+      top: 11px;
+      content: "";
+      height: 2px;
+      transform: translateX(-100%);
+      position: absolute;
+      background-color: $green-900;
+      width: 100vw;
+      left: 0;
+    }
   }
 }
 
