@@ -12,23 +12,29 @@
 </head>
 
 <body>
-  <div class="intro intro--form container container--form">
-    <header class="page-header container">
+  <div class="intro container">
+    <header class="page-header page-header--catalog container">
       <div class="page-header__logo">
-        <a><img src="img/icons/logo_mobile.svg" width="34" height="37" alt="Питание для котов"></a>
-        <a><img src="img/icons/logo_2.svg" width="101" height="18" alt="Cat energy"></a>
-        <button class="page-header__toggle" type="button" aria-label="Открыть/закрыть меню"></button>
+        <a class="page-header__link-img">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="../img/icons/logo_desktop.svg">
+            <source media="(min-width: 768px)" srcset="../img/icons/logo_tablet.svg">
+            <img src="img/icons/logo_mobile.svg" width="191" height="37" alt="Питание для котов">
+          </picture>
+        </a>
+        <button class="page-header__toggle page-header--closed" type="button"
+          aria-label="Открыть/закрыть меню"></button>
       </div>
       <nav class="main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="main-nav__link style-link style-link--form" href="index.html">Главная</a>
+            <a class="main-nav__link style-link">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link style-link style-link--form" href="catalog.html">Каталог продукции</a>
+            <a class="main-nav__link style-link main-nav__item--active" href="catalog.html">Каталог продукции</a>
           </li>
-          <li class="main-nav__item main-nav__item--active">
-            <a class="main-nav__link style-link style-link--form">Подбор программы</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link style-link" href="form.html">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -48,13 +54,13 @@
           </a>
           <dl class="product-detail">
             <dt>Масса</dt>
-            <dd>500г</dd>
+            <dd class="product-detail__text">500г</dd>
 
             <dt>Вкус</dt>
-            <dd>Курица</dd>
+            <dd class="product-detail__text">Курица</dd>
 
             <dt>Цена</dt>
-            <dd>700 р.</dd>
+            <dd class="product-detail__text">700 р.</dd>
           </dl>
 
           <a href="#" class="button button--goods">Заказать</a>
@@ -67,13 +73,13 @@
           </a>
           <dl class="product-detail">
             <dt>Масса</dt>
-            <dd>1000г</dd>
+            <dd class="product-detail__text">1000г</dd>
 
             <dt>Вкус</dt>
-            <dd>Курица</dd>
+            <dd class="product-detail__text">Курица</dd>
 
             <dt>Цена</dt>
-            <dd>1000 р.</dd>
+            <dd class="product-detail__text">1000 р.</dd>
           </dl>
 
           <a href="#" class="button button--goods">Заказать</a>
@@ -87,13 +93,13 @@
           </a>
           <dl class="product-detail">
             <dt>Масса</dt>
-            <dd>500г</dd>
+            <dd class="product-detail__text">500г</dd>
 
             <dt>Вкус</dt>
-            <dd>Рыба</dd>
+            <dd class="product-detail__text">Рыба</dd>
 
             <dt>Цена</dt>
-            <dd>700 р.</dd>
+            <dd class="product-detail__text">700 р.</dd>
           </dl>
 
           <a href="#" class="button button--goods">Заказать</a>
@@ -106,13 +112,13 @@
           </a>
           <dl class="product-detail">
             <dt>Масса</dt>
-            <dd>1000г</dd>
+            <dd class="product-detail__text">1000г</dd>
 
             <dt>Вкус</dt>
-            <dd>Рыба</dd>
+            <dd class="product-detail__text">Рыба</dd>
 
             <dt>Цена</dt>
-            <dd>1000 р.</dd>
+            <dd class="product-detail__text">1000 р.</dd>
           </dl>
 
           <a href="#" class="button button--goods">Заказать</a>
@@ -126,13 +132,13 @@
           </a>
           <dl class="product-detail">
             <dt>Масса</dt>
-            <dd>500г</dd>
+            <dd class="product-detail__text">500г</dd>
 
             <dt>Вкус</dt>
-            <dd>Гречка</dd>
+            <dd class="product-detail__text">Гречка</dd>
 
             <dt>Цена</dt>
-            <dd>400 р.</dd>
+            <dd class="product-detail__text">400 р.</dd>
           </dl>
 
           <a href="#" class="button button--goods">Заказать</a>
@@ -145,13 +151,13 @@
           </a>
           <dl class="product-detail">
             <dt>Масса</dt>
-            <dd>1000г</dd>
+            <dd class="product-detail__text">1000г</dd>
 
             <dt>Вкус</dt>
-            <dd>Гречка</dd>
+            <dd class="product-detail__text">Гречка</dd>
 
             <dt>Цена</dt>
-            <dd>700 р.</dd>
+            <dd class="product-detail__text">700 р.</dd>
           </dl>
 
           <a href="#" class="button button--goods">Заказать</a>
@@ -164,19 +170,19 @@
           </a>
           <dl class="product-detail">
             <dt>Масса</dt>
-            <dd>500г</dd>
+            <dd class="product-detail__text">500г</dd>
 
             <dt>Вкус</dt>
-            <dd>Рис</dd>
+            <dd class="product-detail__text">Рис</dd>
 
             <dt>Цена</dt>
-            <dd>500 р.</dd>
+            <dd class="product-detail__text">500 р.</dd>
           </dl>
 
           <a href="#" class="button button--goods">Заказать</a>
         </div>
         <div class="goods-item goods-item--additional-section">
-          <h3 class="goods-item__title">Показать еще 100500 товаров</h3>
+          <h3 class="goods-item__title goods-item__title--additional-section">Показать еще 100500 товаров</h3>
           <p class="goods-item__additional-text">На самом деле вкусов гораздо больше!</p>
 
           <a class="goods-list__link" href="#">Показать все</a>
@@ -261,7 +267,7 @@
         </div>
       </div>
     </section>
-    <section class="contacts">
+    <section class="contacts contacts--catalog">
       <h2 class="visually-hidden">Контактные данные</h2>
 
       <div class="contacts__wrapper">

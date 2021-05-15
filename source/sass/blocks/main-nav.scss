@@ -81,3 +81,11 @@
     }
   }
 }
+
+.main-nav__item--form {
+  @media (min-width: $desktop-width) {
+    &::after {
+      background: $green-900;
+    }
+  }
+}

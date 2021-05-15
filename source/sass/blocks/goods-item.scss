@@ -11,6 +11,8 @@
     width: 324px;
     display: block;
     padding: 30px;
+    background-color: $gray-900;
+    border: none;
   }
 
   @media (min-width: $desktop-width) {
@@ -26,6 +28,7 @@
   font-style: normal;
   line-height: 20px;
   text-transform: uppercase;
+  width: 76px;
 }
 
 .goods-item__img {
@@ -35,4 +38,33 @@
 .goods-item--additional-section {
   display: flex;
   flex-wrap: wrap;
+  padding-top: 80px;
+
+}
+
+.goods-item__title--additional-section {
+  flex-grow: 1;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.goods-item__additional-text {
+  font-family: $font-family-arial;
+  font-size: 12px;
+  line-height: 16px;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  width: 100%;
+  position: relative;
+
+  &::before {
+    top: -97px;
+    content: "";
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    background-image: url("../img/icons/plus.svg");
+    left: 120px;
+  }
 }

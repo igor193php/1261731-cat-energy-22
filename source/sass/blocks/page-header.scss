@@ -70,3 +70,13 @@
     opacity: 0.3;
   }
 }
+
+.page-header--form {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.page-header--catalog {
+  margin-bottom: 27px;
+}

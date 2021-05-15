@@ -27,6 +27,16 @@
   }
 
   @media (min-width: $tablet-width) {
-    border: 1px solid $gray-650;
+    padding-left: 47px;
+    margin-left: 0;
+    border: 1px solid $gray-640;
+
+    &::after {
+      display: none;
+    }
+
+    &::before {
+      display: none;
+    }
   }
 }
