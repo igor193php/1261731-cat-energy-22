@@ -29,6 +29,13 @@
   line-height: 20px;
   text-transform: uppercase;
   width: 76px;
+  margin-bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 101px;
+    text-align: center;
+    margin: 0 auto;
+  }
 }
 
 .goods-item__img {
