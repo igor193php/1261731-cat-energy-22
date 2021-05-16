@@ -12,6 +12,10 @@
     border: 1px solid $gray-640;
     padding-left: 39px;
     padding-right: 39px;
+
+    &:nth-last-child(2) {
+      margin-bottom: 0;
+    }
   }
 
   @media (min-width: $desktop-width) {

@@ -3,6 +3,10 @@
   justify-content: space-between;
   flex-wrap: wrap;
 
+  @media (min-width: $tablet-width) {
+    flex-wrap: nowrap;
+  }
+
   @media (min-width: $desktop-width) {
     width: inherit;
     display: grid;

@@ -20,15 +20,15 @@
   }
 
   @media (min-width: $tablet-width) {
-  &::before {
-    top: 11px;
-    content: "";
-    height: 2px;
-    transform: translateX(-100%);
-    position: absolute;
-    background-color: $green-900;
-    width: 100vw;
-    left: 0;
+    &::before {
+      top: 11px;
+      content: "";
+      height: 2px;
+      transform: translateX(-100%);
+      position: absolute;
+      background-color: $green-900;
+      width: 100vw;
+      left: 0;
+    }
   }
-}
 }
