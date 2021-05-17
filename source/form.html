@@ -145,18 +145,23 @@
     <section class="contacts">
       <h2 class="visually-hidden">Контактные данные</h2>
 
-      <div class="contacts__wrapper contacts__wrapper--form">
+      <div class="contacts__wrapper">
         <div class="contacts__info container">
           <p class="invitation-text">приглашаем
             к сотрудничеству дилеров!
           </p>
-          <address class="contacts__address">
-            <span>ул. Большая Конюшенная, д. 19/8</span> <span>Санкт-Петербург</span>
+          <address class="contacts-address">
+            <span class="contacts-address__street">ул. Большая Конюшенная, д. 19/8</span> <span
+              class="contacts-address__city">Санкт-Петербург</span>
           </address>
         </div>
       </div>
       <div class="map">
-        <img class="map__img" src="img/map.jpg" width="320" height="362" alt="Карта">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="../img/map_desck.jpg">
+          <source media="(min-width: 768px)" srcset="../img/map_tablet.jpg">
+          <img class="map__img" src="img/map.jpg" width="320" height="362" alt="Карта">
+        </picture>
       </div>
     </section>
   </main>

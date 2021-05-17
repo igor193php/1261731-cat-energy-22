@@ -13,10 +13,12 @@
 
   @media (min-width: $tablet-width) {
     min-height: 200px;
+    background-image: url("../img/gift-photo-tablet-1.jpg");
   }
 
   @media (min-width: $desktop-width) {
     width: 245px;
+    background-image: url("../img/gift-photo-desck-1.jpg");
   }
 }
 

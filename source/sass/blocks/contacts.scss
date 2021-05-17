@@ -47,6 +47,10 @@
 
 .contacts--catalog {
   background-color: $gray-900;
+
+  @media (min-width: $desktop-width) {
+    background-color: transparent;
+  }
 }
 
 .contacts__address {

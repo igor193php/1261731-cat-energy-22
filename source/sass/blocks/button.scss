@@ -54,3 +54,12 @@
   grid-column: 1 / -1;
   grid-row: 3 / 4;
 }
+
+.button--additional-goods {
+  grid-column: 1 / -1;
+  grid-row: 3 / 4;
+
+  @media (min-width: $desktop-width) {
+    width: 244px;
+  }
+}
