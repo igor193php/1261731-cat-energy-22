@@ -13,10 +13,27 @@
     padding: 30px;
     background-color: $gray-900;
     border: none;
+    position: relative;
   }
 
   @media (min-width: $desktop-width) {
     width: 245px;
+  }
+}
+
+.goods-item__img-bin {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: -40px;
+    left: 80px;
+  }
+}
+
+.goods-item__img-big-bin {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: -55px;
+    left: 80px;
   }
 }
 
@@ -35,12 +52,14 @@
     width: 101px;
     text-align: center;
     margin: 0 auto;
+    margin-top: 171px;
   }
 }
 
 .goods-item__img {
   grid-row: 1 / 3;
 }
+
 
 .goods-item--additional-section {
   display: flex;
