@@ -167,6 +167,10 @@
     background-image: url("../img/icons/icon_arrow.svg");
     background-repeat: no-repeat;
 
+    &:hover {
+      background-image: url("../img/icons/icon_arrow_long.svg");
+    }
+
     @media (min-width: $tablet-width) {
       left: 134px;
       top: 10px;

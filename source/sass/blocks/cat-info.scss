@@ -15,6 +15,18 @@
   padding-left: 14px;
   text-transform: uppercase;
   border: 1px solid $gray-610;
+
+  &:hover {
+    border: 1px solid $gray-640;
+  }
+
+  &:focus {
+    border: 1px solid $gray-700;
+  }
+
+  &:invalid:focus {
+    outline: 2px solid $red-900;
+  }
 }
 
 .cat-info__title {
